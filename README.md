@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Abdul Waris Hesham - Frontend Developer Portfolio
 
 A world-class, modern, highly professional developer portfolio website built with **React + Tailwind CSS**.
@@ -210,3 +211,7 @@ This project is open source and available under the MIT License.
 ---
 
 Built with ❤️ by Abdul Waris Hesham
+=======
+# my-portfolio
+this my portfolio for more info about me this is for you.
+>>>>>>> 136a97b788c814c7c3d40b954cecbb2dd5cb7a92
