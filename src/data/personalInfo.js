@@ -10,5 +10,5 @@ export const personalInfo = {
     linkedin: 'https://www.linkedin.com/in/abdulwarishesham',
     email: 'mailto:heshamabdulwaris@gmail.com',
   },
-  resumeUrl: '/public/cv/Waris.pdf',
+ 
 };

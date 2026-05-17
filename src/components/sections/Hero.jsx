@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaDownload, FaChevronDown } from 'react-icons/fa';
 import { personalInfo } from '../../data/personalInfo';
 import MyImg from '../../assets/my picture/waris1.png';
+import MyCv from '../../assets/cv/Waris.pdf';
 import Button from '../../components/ui/Button';
 
 const Hero = () => {
@@ -106,8 +107,8 @@ const Hero = () => {
               Hire Me
             </Button>
             <a 
-              href={personalInfo.resumeUrl} 
-              download="/public/cv/Waris.pdf"
+              href={MyCv} 
+              download
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary-500 text-primary-700 dark:text-primary-400 font-semibold rounded-lg hover:bg-primary-500 hover:text-white transform hover:scale-105 transition-all duration-300 sm:justify-start"
             >
               <FaDownload /> Download CV
