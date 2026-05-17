@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaChevronDown } from 'react-icons/fa';
 import { personalInfo } from '../../data/personalInfo';
+import MyImg from '../../assets/my picture/waris1.png';
 import Button from '../../components/ui/Button';
 
 const Hero = () => {
@@ -127,7 +128,7 @@ const Hero = () => {
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
               className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 p-1 shadow-2xl"
             >
-              <img src="/src/assets/my picture/waris1.png" alt='' className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
+              <img src={MyImg} alt="Waris" className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
             </motion.div>
 
             {/* Decorative elements */}
