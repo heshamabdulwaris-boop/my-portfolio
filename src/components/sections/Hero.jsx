@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaDownload, FaChevronDown } from 'react-icons/fa';
 import { personalInfo } from '../../data/personalInfo';
 import MyImg from '../../assets/my picture/waris1.png';
-import MyCv from '../../assets/cv/Waris.pdf';
+import MyCv from '../../../public/cv/Waris.pdf';
 import Button from '../../components/ui/Button';
 
 const Hero = () => {
