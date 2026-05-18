@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaDownload, FaChevronDown } from 'react-icons/fa';
+import toast from 'react-hot-toast';
 import { personalInfo } from '../../data/personalInfo';
-import MyImg from '../../assets/my picture/waris1.png';
-import MyCv from '../../../public/cv/abdulwaris.pdf';
 import Button from '../../components/ui/Button';
 
 const Hero = () => {
@@ -106,13 +105,15 @@ const Hero = () => {
             <Button onClick={() => scrollToSection('contact')}>
               Hire Me
             </Button>
-            <a 
-              href={MyCv} 
-              download
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary-500 text-primary-700 dark:text-primary-400 font-semibold rounded-lg hover:bg-primary-500 hover:text-white transform hover:scale-105 transition-all duration-300 sm:justify-start"
+            <Button 
+              onClick={() => {
+                toast("You can't download CV, please contact me", { icon: '📧' });
+                setTimeout(() => scrollToSection('contact'), 500);
+              }}
+              variant="outline"
             >
-              <FaDownload /> Download CV
-            </a>
+              <FaDownload /> Download cv
+            </Button>
           </motion.div>
         </motion.div>
 
@@ -129,7 +130,7 @@ const Hero = () => {
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
               className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 p-1 shadow-2xl"
             >
-              <img src={MyImg} alt="Waris" className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
+              <img src="/src/assets/my picture/waris1.png" alt='' className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
             </motion.div>
 
             {/* Decorative elements */}
