@@ -4,6 +4,7 @@ import { FaDownload, FaChevronDown } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import { personalInfo } from '../../data/personalInfo';
 import Button from '../../components/ui/Button';
+import MYImg from '../../assets/myimg.png';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -130,7 +131,7 @@ const Hero = () => {
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
               className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary-500 via-secondary-500 to-accent-500 p-1 shadow-2xl"
             >
-              <img src="/src/assets/my picture/waris1.png" alt='' className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
+              <img src={MYImg} alt="Waris" className="w-full h-full rounded-full bg-white dark:bg-slate-800 object-cover flex items-center justify-center"/>
             </motion.div>
 
             {/* Decorative elements */}
