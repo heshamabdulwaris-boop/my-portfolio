@@ -63,7 +63,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: FaEnvelope, label: 'Email', value: personalInfo.email, link: personalInfo.social.email },
     { icon: FaPhone, label: 'Phone', value: personalInfo.phone, link: `tel:${personalInfo.phone}` },
-    { icon: FaMapMarkerAlt, label: 'Location', value: personalInfo.location, link: '#' },
+    { icon: FaMapMarkerAlt, label: 'Location', value: personalInfo.location },
   ];
 
   const socialLinks = [
