@@ -4,7 +4,7 @@ import { FaDownload, FaChevronDown } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import { personalInfo } from '../../data/personalInfo';
 import Button from '../../components/ui/Button';
-import MYImg from '../../assets/myimg.png';
+import MYImg from '../../../public/cv/abdulwaris.pdf';
 
 const Hero = () => {
   const [text, setText] = useState('');
